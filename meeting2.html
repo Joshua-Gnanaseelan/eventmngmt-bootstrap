@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decision-Making Meetings</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background:  #f5faff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .header {
+      background:linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color:  #1e3c72;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: #2a5298;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e3c72;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Decision-Making Meetings</h1>
+    <p>Effective decision-making meetings empower teams to evaluate options and choose the best course of action.</p>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">Key Types of Decision-Making</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Consensus-Based</h3>
+        <p>All members work together to find a mutually acceptable solution, fostering team unity and buy-in.</p>
+      </div>
+      <div class="card">
+        <h3>Majority Rule</h3>
+        <p>Decisions are made through voting, where the option with the most votes wins. Efficient but may leave minority voices unheard.</p>
+      </div>
+      <div class="card">
+        <h3>Leader Decides</h3>
+        <p>The team leader listens to feedback, then makes the final decision. Useful for time-sensitive situations.</p>
+      </div>
+      <div class="card">
+        <h3>Delegated Decision</h3>
+        <p>A specific individual or subgroup is given the authority to decide, allowing focus and expertise to lead the outcome.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Planify Events. All Rights Reserved.</p>
+  </div>
+
+</body>
+</html>

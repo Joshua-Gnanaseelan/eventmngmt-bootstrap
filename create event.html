@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .signup-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      width: 360px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 28px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 15px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      border-color: #43cea2;
+      outline: none;
+    }
+
+    .input-error {
+      border-color: #e74c3c !important;
+    }
+
+    .error-message {
+      color: #e74c3c;
+      font-size: 0.9em;
+      margin-top: -12px;
+      margin-bottom: 12px;
+      display: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #43cea2;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2aab82;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <form id="signupForm" novalidate>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required />
+      <div id="firstNameError" class="error-message">First name is required.</div>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required />
+      <div id="lastNameError" class="error-message">Last name is required.</div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      <div id="emailError" class="error-message">Please enter a valid email.</div>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
+      <div id="passwordError" class="error-message">Password must be at least 6 characters.</div>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required />
+      <div id="confirmPasswordError" class="error-message">Passwords do not match.</div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('signupForm');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirmPassword');
+
+    const firstNameError = document.getElementById('firstNameError');
+    const lastNameError = document.getElementById('lastNameError');
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
+    const confirmPasswordError = document.getElementById('confirmPasswordError');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Reset errors
+      [firstNameError, lastNameError, emailError, passwordError, confirmPasswordError].forEach(el => el.style.display = 'none');
+      [firstName, lastName, email, password, confirmPassword].forEach(el => el.classList.remove('input-error'));
+
+      let valid = true;
+
+      // Validate first name
+      if (!firstName.value.trim()) {
+        firstNameError.style.display = 'block';
+        firstName.classList.add('input-error');
+        valid = false;
+      }
+
+      // Validate last name
+      if (!lastName.value.trim()) {
+        lastNameError.style.display = 'block';
+        lastName.classList.add('input-error');
+        valid = false;
+      }
+
+      // Validate email format
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
+        emailError.style.display = 'block';
+        email.classList.add('input-error');
+        valid = false;
+      }
+
+      // Validate password length
+      if (!password.value || password.value.length < 6) {
+        passwordError.style.display = 'block';
+        password.classList.add('input-error');
+        valid = false;
+      }
+
+      // Validate confirm password matches
+      if (confirmPassword.value !== password.value || !confirmPassword.value) {
+        confirmPasswordError.style.display = 'block';
+        confirmPassword.classList.add('input-error');
+        valid = false;
+      }
+
+      if (valid) {
+        alert('Sign Up successful!');
+        form.reset();
+        // Add your sign up logic here (e.g., API call)
+      }
+      if (valid) {
+  alert('Sign Up successful!');
+  form.reset();
+  // Redirect to homepage
+  window.location.href = 'file:///C:/Users/Joshu/OneDrive/Desktop/VS%20CODE/JAVA%20SCRIPT/javasricpt%20project.html';  // <-- change this URL to your homepage
+}
+
+    });
+  </script>
+
+</body>
+</html>
