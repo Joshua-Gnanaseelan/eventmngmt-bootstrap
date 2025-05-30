@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mind Mapping</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8fafc;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: #0f172a;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: #0f172a;
+      margin-bottom: 0.3rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .events ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .events li {
+      background-color: #fff;
+      padding: 1rem;
+      border-left: 5px solid #0f172a;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0f172a;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MindMap Connect</div>
+    <nav>
+      <a href="#mindmapping">Mind Mapping</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Mind Mapping Explanation -->
+    <section id="mindmapping">
+      <h2>🧠 Mind Mapping</h2>
+      <p>
+        <strong>Mind Mapping</strong> is a visual brainstorming technique that helps organize thoughts, ideas, or concepts around a central topic. It uses diagrams to represent tasks, keywords, or other items linked to a central concept, improving clarity and creativity.
+      </p>
+      <ul>
+        <li><strong>Central Idea:</strong> Start with a main concept in the center of the map.</li>
+        <li><strong>Branches:</strong> Create branches for related themes or subtopics.</li>
+        <li><strong>Connections:</strong> Use lines and keywords to connect ideas logically.</li>
+        <li><strong>Visual Elements:</strong> Add colors, icons, and images for better memory retention.</li>
+        <li><strong>Applications:</strong> Ideal for planning, note-taking, studying, and problem-solving.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Profiles -->
+    <section id="profiles">
+      <h2>👥 Professional Profiles</h2>
+      <div class="profiles">
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Anna Thomas">
+          <h3>Anna Thomas</h3>
+          <p>Learning Strategist at BrainMap Co.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Mark Li">
+          <h3>Mark Li</h3>
+          <p>Innovation Coach at ThinkDraw</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Sara Patel">
+          <h3>Sara Patel</h3>
+          <p>Productivity Consultant at MindLink</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events" class="events">
+      <h2>📅 Upcoming Events</h2>
+      <ul>
+        <li><strong>July 3, 2025:</strong> Mind Mapping for Business Workshop</li>
+        <li><strong>July 10, 2025:</strong> Visual Thinking Techniques Masterclass</li>
+        <li><strong>July 20, 2025:</strong> Creative Ideation Bootcamp</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 MindMap Connect. All rights reserved.
+  </footer>
+
+</body>
+</html>

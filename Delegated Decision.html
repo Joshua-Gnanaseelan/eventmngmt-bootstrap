@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delegated Decision Making</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #1e40af;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: #1e40af;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: #1e40af;
+      margin-bottom: 0.3rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .events ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .events li {
+      background-color: #fff;
+      padding: 1rem;
+      border-left: 5px solid #1e40af;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e40af;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SmartDecision</div>
+    <nav>
+      <a href="#delegated">Delegated Decision</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Delegated Decision Explanation -->
+    <section id="delegated">
+      <h2>🗂️ What is Delegated Decision-Making?</h2>
+      <p>
+        <strong>Delegated decision-making</strong> is a leadership style where the authority to make a decision is passed on to an individual or a small team. The leader trusts the delegate(s) to act in the best interest of the group or organization.
+      </p>
+      <ul>
+        <li><strong>Empowers Teams:</strong> Gives team members more responsibility and ownership.</li>
+        <li><strong>Develops Skills:</strong> Helps grow leadership and critical thinking among staff.</li>
+        <li><strong>Frees Up Leadership:</strong> Leaders can focus on higher-level strategy while others handle details.</li>
+        <li><strong>Requires Trust:</strong> Works best when there is mutual trust and clear communication.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Profiles -->
+    <section id="profiles">
+      <h2>👥 Professional Profiles</h2>
+      <div class="profiles">
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Priya">
+          <h3>Priya Mehta</h3>
+          <p>Project Lead at Stratix Inc.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="James">
+          <h3>James O'Connor</h3>
+          <p>Operations Manager at LogicByte</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Linda">
+          <h3>Linda Zhao</h3>
+          <p>Team Coach at AgileForce</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events" class="events">
+      <h2>📅 Upcoming Events</h2>
+      <ul>
+        <li><strong>July 6, 2025:</strong> Workshop: Trust-Based Delegation Tactics</li>
+        <li><strong>July 12, 2025:</strong> Panel Discussion: Empowering Your Team</li>
+        <li><strong>July 18, 2025:</strong> Webinar: Delegation for Managers</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 SmartDecision. All rights reserved.
+  </footer>
+
+</body>
+</html>

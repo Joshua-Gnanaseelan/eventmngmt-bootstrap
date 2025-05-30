@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boost Communication</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #2c3e50;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #2980b9;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+    /* Profiles */
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .profile-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+    .profile-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+    .profile-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #2980b9;
+    }
+    .profile-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    /* Events */
+    .events ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .events li {
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #2980b9;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-weight: 600;
+      color: #2980b9;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CommConnect</div>
+    <nav>
+      <a href="#boost-communication">Boost Communication</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Boost Communication Section -->
+    <section id="boost-communication">
+      <h2>🔊 Boost Communication</h2>
+      <p>Effective communication is the foundation of successful professional relationships. Boosting communication skills helps you convey ideas clearly, build trust, and collaborate efficiently.</p>
+      <ul>
+        <li><strong>Active Listening:</strong> Understanding others to respond thoughtfully.</li>
+        <li><strong>Clear Messaging:</strong> Expressing ideas concisely and confidently.</li>
+        <li><strong>Non-Verbal Cues:</strong> Using body language to enhance your message.</li>
+        <li><strong>Feedback Exchange:</strong> Giving and receiving constructive feedback for growth.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Profiles Section -->
+    <section id="profiles">
+      <h2>👥 Professional Profiles</h2>
+      <div class="profiles">
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/100" alt="Sarah Lee" />
+          <h3>Sarah Lee</h3>
+          <p>Communication Specialist at BrightTalk</p>
+        </div>
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/100" alt="David Kim" />
+          <h3>David Kim</h3>
+          <p>Team Lead at Innovatech</p>
+        </div>
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/100" alt="Maria Garcia" />
+          <h3>Maria Garcia</h3>
+          <p>HR Manager at PeopleFirst</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="events">
+      <h2>📅 Upcoming Events</h2>
+      <ul>
+        <li><strong>July 10, 2025:</strong> Effective Communication Workshop</li>
+        <li><strong>July 22, 2025:</strong> Leadership & Communication Panel</li>
+        <li><strong>August 5, 2025:</strong> Virtual Networking Meetup</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 CommConnect. All rights reserved.
+  </footer>
+</body>
+</html>

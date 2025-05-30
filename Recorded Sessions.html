@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recorded Sessions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1e40af;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+      padding: 1.5rem;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card img {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .events li {
+      margin-bottom: 0.75rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid #2563eb;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><strong>EventWise</strong></div>
+    <nav class="nav-links">
+      <a href="#sessions">Recorded Sessions</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Recorded Sessions Section -->
+    <section id="sessions">
+      <h2>🎥 Recorded Sessions</h2>
+      <p>Recorded sessions offer a convenient way for professionals to revisit important talks, workshops, or panels anytime. Whether you missed the live event or want to review insights, recordings ensure no knowledge is lost.</p>
+      <ul>
+        <li><strong>Flexible learning:</strong> Watch sessions at your own pace, on your own time.</li>
+        <li><strong>Reinforcement:</strong> Replay complex topics or impactful keynotes.</li>
+        <li><strong>Access to global content:</strong> View international content that may have aired in a different time zone.</li>
+        <li><strong>Library creation:</strong> Build your personal archive of professional knowledge.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Profiles Section -->
+    <section id="profiles">
+      <h2>👥 Professional Profiles</h2>
+      <p>Get to know global professionals who attend and speak in recorded sessions.</p>
+      <div class="profiles">
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Anna Kim">
+          <h3>Anna Kim</h3>
+          <p>Cybersecurity Analyst – South Korea</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Liam Johnson">
+          <h3>Liam Johnson</h3>
+          <p>Product Manager – Canada</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Maya El-Sayed">
+          <h3>Maya El-Sayed</h3>
+          <p>Finance Consultant – Egypt</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="events">
+      <h2>📅 Upcoming Events</h2>
+      <p>Don’t miss out on these upcoming events. All sessions will be recorded and made available online.</p>
+      <ul>
+        <li><strong>August 8, 2025:</strong> Digital Marketing Deep Dive (Hybrid)</li>
+        <li><strong>August 15, 2025:</strong> Cloud Tech Panel – Recorded with Q&A</li>
+        <li><strong>August 24, 2025:</strong> Global Business Growth Conference</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EventWise. Learn, Connect, Grow.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Convenience & Accessibility</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1d4ed8;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card img {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .events li {
+      margin-bottom: 0.75rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid #2563eb;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><strong>NetEase</strong></div>
+    <nav class="nav-links">
+      <a href="#accessibility">Accessibility</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Convenience & Accessibility Section -->
+    <section id="accessibility">
+      <h2>🌐 Convenience & Accessibility</h2>
+      <p>Modern networking platforms have made professional development more accessible than ever before. Whether you're working from home, on the go, or in a remote location, you can still participate in events, connect with peers, and access resources effortlessly.</p>
+      <ul>
+        <li><strong>24/7 Access:</strong> Network and learn anytime from any device.</li>
+        <li><strong>Virtual Events:</strong> Join conferences, workshops, and meetups without travel.</li>
+        <li><strong>Inclusive Design:</strong> Platforms now support accessibility features for people with disabilities.</li>
+        <li><strong>Global Reach:</strong> Connect with professionals across the world, not just your local area.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Profiles Section -->
+    <section id="profiles">
+      <h2>👥 Professional Profiles</h2>
+      <p>Discover and connect with professionals who make the most of accessible platforms.</p>
+      <div class="profiles">
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Alex Kim">
+          <h3>Alex Kim</h3>
+          <p>Remote Developer from Seoul</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Linda Rose">
+          <h3>Linda Rose</h3>
+          <p>Content Strategist in Berlin</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="David Nolan">
+          <h3>David Nolan</h3>
+          <p>Digital Marketer - Freelance</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="events">
+      <h2>📅 Upcoming Events</h2>
+      <p>Join events designed with convenience and accessibility in mind.</p>
+      <ul>
+        <li><strong>Aug 5, 2025:</strong> Global Virtual Networking Summit</li>
+        <li><strong>Aug 14, 2025:</strong> Inclusive Design in Tech Panel</li>
+        <li><strong>Aug 22, 2025:</strong> Freelancers' Worldwide Meet & Greet</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NetEase. Networking made easy and accessible for all.</p>
+  </footer>
+
+</body>
+</html>

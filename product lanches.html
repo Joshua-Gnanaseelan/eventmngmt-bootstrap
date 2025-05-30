@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Highlights</title>
+  <style>
+    /* Basic Reset and Layout */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1e293b;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Profile Cards */
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card img {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .events li {
+      margin-bottom: 0.75rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid #3b82f6;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Event Highlights</div>
+    <nav class="nav-links">
+      <a href="#launches">Launches</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Product Launches -->
+    <section id="launches">
+      <h2>🚀 Product Launches</h2>
+      <p>Product launches are a key highlight in our event calendar. They provide an opportunity to showcase innovative solutions and cutting-edge tools to a professional audience.</p>
+      <ul>
+        <li><strong>Live Demos:</strong> Get a first look at new tools, apps, or platforms during live demo sessions.</li>
+        <li><strong>Expert Q&A:</strong> Interact directly with the creators or technical leads during product introductions.</li>
+        <li><strong>Networking Opportunities:</strong> Connect with product teams, investors, and early adopters after the launch.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Profiles -->
+    <section id="profiles">
+      <h2>👤 Professional Profiles</h2>
+      <p>Connect with innovative professionals who are leading change in their industries. These profiles reflect leadership, creativity, and collaboration.</p>
+      <div class="profiles">
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Ava Green">
+          <h3>Ava Green</h3>
+          <p>Founder, EcoWare Technologies</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Liam Patel">
+          <h3>Liam Patel</h3>
+          <p>Product Manager, TechNova</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Sophia King">
+          <h3>Sophia King</h3>
+          <p>Investor & Startup Mentor</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events" class="events">
+      <h2>📅 Upcoming Events</h2>
+      <ul>
+        <li><strong>August 12, 2025:</strong> Launch Day – Green Tech Showcase</li>
+        <li><strong>August 18, 2025:</strong> Product Strategy Panel with Founders</li>
+        <li><strong>August 25, 2025:</strong> SaaS Demo Marathon + Live Q&A</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Event Highlights. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

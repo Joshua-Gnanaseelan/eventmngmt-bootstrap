@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Networking Portal</title>
+  <style>
+    /* Base Reset and Body */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1e293b;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Profile Cards */
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card img {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .events li {
+      margin-bottom: 0.75rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid #3b82f6;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Networking Portal</div>
+    <nav class="nav-links">
+      <a href="#workshops">Workshops</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Workshops & Panels -->
+    <section id="workshops">
+      <h2>🛠️ Workshops & Panels</h2>
+      <p>Workshops and panels are interactive sessions that focus on specific skills or topics. They are led by industry experts and often include hands-on activities, Q&A, and group discussions.</p>
+      <ul>
+        <li><strong>Workshops:</strong> Skill-focused sessions like resume building, public speaking, or coding sprints.</li>
+        <li><strong>Panels:</strong> Multi-speaker discussions where experts share diverse views on industry topics.</li>
+        <li><strong>Networking Time:</strong> Built-in breaks to connect with speakers and peers.</li>
+      </ul>
+    </section>
+
+    <!-- Professional Profiles -->
+    <section id="profiles">
+      <h2>👤 Professional Profiles</h2>
+      <p>Explore key individuals in your industry. Whether you're looking for collaboration or mentorship, these profiles can help build valuable connections.</p>
+      <div class="profiles">
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Amelia Harper">
+          <h3>Amelia Harper</h3>
+          <p>Digital Marketing Lead at TrendMedia</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Carlos Ray">
+          <h3>Carlos Ray</h3>
+          <p>DevOps Engineer at CloudFrame</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/100" alt="Nina Singh">
+          <h3>Nina Singh</h3>
+          <p>Workshop Speaker & Career Coach</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events" class="events">
+      <h2>📅 Upcoming Events</h2>
+      <ul>
+        <li><strong>July 5, 2025:</strong> "Mastering Soft Skills" Workshop</li>
+        <li><strong>July 10, 2025:</strong> Tech Innovation Panel Discussion</li>
+        <li><strong>July 18, 2025:</strong> Networking Mix
