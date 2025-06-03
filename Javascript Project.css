@@ -142,6 +142,8 @@ a {
 
 .boxbutton {
   background-color: #28a745;
+  height: 50px;
+  width: 100%;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -269,3 +271,7 @@ footer {
   padding: 10px;
   font-size: 13px;
 }
+
+ html {
+      scroll-behavior: smooth;
+    }
